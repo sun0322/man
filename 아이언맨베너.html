@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이언맨ㅂ배너</title>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+    <style>
+        .banner{
+            display: block;
+            width: 600px;height: 170px;
+            border:  1px solid #ddd;
+            position: relative;
+            /* 배경이미지 */
+            background-image:
+             url('./images/Iron-Man176.png'),
+             url('./images/Tank.gif');
+            background-repeat: no-repeat;
+            background-position:left top, right top;
+            background-size: 216px 176px , cover;
+            color: #fff;
+            text-shadow: 1px 1px 2px #333;
+            font-family: 'Finger Paint', cursive;
+            overflow: hidden;
+        }
+        /* 로고 */
+        .banner .logo{
+            width: 366px; height: 100px;
+            position: absolute;
+            /* background: #ccc; */
+            background-image: url('./images/logo.png');
+            right: 20px;top:20px;
+            /* animation 
+            animation-name: logo;
+            animation-duration: 10s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            */
+
+            /* 축약식 */
+            animation: logo 10s ease-in-out infinite;
+        }
+        /* keyframe */
+        @keyframes logo{
+            0%{ right: -765px;}
+            9%{right: 25px;}
+            10%{ right: 20px;}
+            100%{} 
+        }
+        .banner strong{
+            position: absolute;
+            right: 20px;bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.imdb.com" class="banner">
+        <div class="logo">Now on sale!</div>
+        <strong>marvel.com/ironmam3</strong>
+    </a>
+</body>
+</html>
